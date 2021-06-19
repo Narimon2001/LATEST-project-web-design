@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Template</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+    <script src="jquery-1.10.0.min.js"></script>
+    <script src="jquery.mobile-1.4.5.min.js"></script>
+
+    
+</head>
+<body>
+    <h1 style="text-align: center; font-family: 'Courier New', Courier, monospace;">WELCOME TO NAF TEXTILES</h1>
+
+    
+    <ul class="menu_ul">
+        <ul class="menu_ul li">
+        <ul class="menu_ul a">
+        <ul class="menu_ul a:hover">
+    
+            <li menu="menu_ul"><a href="home.html" target="location">Home</a></li>
+            <li menu="menu_ul"><a href="gallery.html" target="location">List of Product</a></li>
+            <li menu="menu_ul"><a href="form.html" target="location">Order Form</a></li>
+            <li menu="menu_ul"><a href="contact.html" target="location">Contact Us</a></li>
+        </ul>
+        </ul>
+        </ul>
+        </ul>
+
+        <h1><img src="collection1.jpg" width="100" height="450" class="center"></h1>
+    
+        <h4>You can come and see for yourself the wide selection of clothes available in our boutique. Must be one of them to your liking
+        <br>NAF TEXTTILE we have a wide range of modern fashion shirts. NAF TEXTTILE provides shirts for women and men, in addition our store has very cheap prices.</h4>
+       <marquee direction="left" bgcolor="#EEE3CC" loop="5"
+               height="30px">YOU CAN SCROLL TO CHOOSE YOUR COLLECTION !! 
+       </marquee>
+    <style>
+    * {
+     box-sizing: border-box;
+    }
+    
+    body {
+     background-color: #f1f1f1;
+     padding: 20px;
+     font-family: Arial;
+    }
+    
+    /* Center website */
+    .main {
+     max-width: 1000px;
+     margin: auto;
+    }
+    
+    h1 {
+     font-size: 50px;
+     word-break: break-all;
+    }
+    
+    .row {
+     margin: 10px -16px;
+    }
+    
+    /* Add padding BETWEEN each column */
+    .row,
+    .row > .column {
+     padding: 8px;
+    }
+    
+    /* Create three equal columns that floats next to each other */
+    .column {
+     float: left;
+     width: 33%;
+     display: none; /* Hide all elements by default */
+    }
+    
+    /* Clear floats after rows */ 
+    .row:after {
+     content: "";
+     display: table;
+     clear: both;
+    }
+    
+    /* Content */
+    .content {
+     background-color: white;
+     padding: 10px;
+    }
+    
+    /* The "show" class is added to the filtered elements */
+    .show {
+     display: block;
+    }
+    
+    /* Style the buttons */
+    .btn {
+     border: none;
+     outline: none;
+     padding: 12px 16px;
+     background-color: white;
+     cursor: pointer;
+    }
+    
+    .btn:hover {
+     background-color: #ddd;
+    }
+    
+    .btn.active {
+     background-color: #666;
+     color: white;
+    }
+    </style>
+    
+    
+    </body>
+    </head>
+    <!-- MAIN (Center website) -->
+    <div class="main">
+    
+    <h1>PRODUCT GALLERY</h1>
+    <hr>
+    
+    <div id="myBtnContainer">
+     <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+     <button class="btn" onclick="filterSelection('girl')"> Girl</button>
+     <button class="btn" onclick="filterSelection('boy')"> Boy</button>
+    </div>
+    
+    <!-- Portfolio Gallery Grid -->
+    <div class="column girl" >
+        <div class="content">
+        <img src="kemeja.jpeg" alt="Girl"  style="width:100%">
+          <h4>Kemeja</h4>
+          <p>RM 40.00</p>
+        </div>
+      </div>
+      <div class="column girl" >
+        <div class="content">
+        <img src="coat.jpeg" alt="Girl"  style="width:100%">
+          <h4>Coat</h4>
+          <p>RM 59.00</p>
+        </div>
+      </div>
+      <div class="column girl" class="column boy">
+        <div class="content">
+          <img src="jacket.jpeg" alt="Girl" style="width:100%">
+          <h4>Jacket</h4>
+          <p>RM 68.00</p>
+        </div>
+      </div>
+      <div class="column girl" >
+        <div class="content">
+        <img src="girl1.jpeg" alt="Girl" style="width:100%">
+          <h4>T-shirt</h4>
+          <p>RM 45.00</p>
+        </div>
+      </div>
+      <div class="column girl" >
+        <div class="content">
+        <img src="girl2.jpeg" alt="Girl" style="width:100%">
+          <h4>T-shirt</h4>
+          <p>RM 40.00</p>
+        </div>
+      </div>
+    <div class="column girl">
+        <div class="content">
+        <img src="skirt.jpeg" alt="Girl" style="width:100%">
+          <h4>Skirt</h4>
+          <p>RM 30.00</p>
+        </div>
+      </div>
+      <div class="column girl" class="column boy">
+        <div class="content">
+          <img src="girl3.jpeg" alt="Girl" style="width:100%">
+          <h4>Pants</h4>
+          <p>RM 53.00</p>
+        </div>
+      </div>
+      <div class="column girl">
+        <div class="content">
+        <img src="jumpsuit.jpeg" alt="Girl" style="width:100%">
+          <h4>Jumpsuite</h4>
+          <p>RM 95.00</p>
+        </div>
+      </div>
+     <div class="column girl" class="column boy">
+        <div class="content">
+          <img src="girl4.jpeg" alt="Girl" style="width:100%">
+          <h4>Pants</h4>
+          <p>RM 34.00</p>
+        </div>
+      </div>
+      <div class="column girl">
+        <div class="content">
+        <img src="dress.jpeg" alt="Girl" style="width:100%">
+          <h4>Dress</h4>
+          <p>RM 99.00</p>
+        </div>
+      </div>
+     <div class="column girl" class="column boy">
+       <div class="content">
+         <img src="pants2.jpeg" alt="Girl" style="width:100%">
+         <h4>Pants</h4>
+         <p>RM 56.00</p>
+       </div>
+     </div>
+      <div class="column girl">
+        <div class="content">
+          <img src="blouse.jpeg" alt="Girl" style="width:100%">
+          <h4>Blouse</h4>
+          <p>RM 43.00</p>
+        </div>
+      </div>
+      
+     
+     <div class= "column boy">
+        <div class="content">
+        <img src="boy7.jpeg" alt="Boy" style="width:100%">
+          <h4>Coat</h4>
+          <p>RM 75.00</p>
+        </div>
+      </div>
+      
+      <div class= "column boy">
+        <div class="content">
+        <img src="boy9.jpeg" alt="Boy" style="width:100%">
+          <h4>T-shirt</h4>
+          <p>RM 50.00</p>
+        </div>
+      </div>
+     <div class="column boy">
+       <div class="content">
+       <img src="suit.jpeg" alt="Boy" style="width:100%">
+         <h4>Suit</h4>
+         <p>RM 99.00</p>
+       </div>
+     </div>
+      <div class= "column boy">
+        <div class="content">
+        <img src="boy1.jpeg" alt="Boy" style="width:100%">
+          <h4>Kemeja</h4>
+          <p>RM 45.00</p>
+        </div>
+      </div>
+      <div class= "column boy">
+        <div class="content">
+        <img src="boy3.jpeg" alt="Boy" style="width:100%">
+          <h4>Pants</h4>
+          <p>RM 59.00</p>
+        </div>
+      </div>
+      <div class= "column boy">
+        <div class="content">
+        <img src="boy4.jpeg" alt="Boy" style="width:100%">
+          <h4>Pants</h4>
+          <p>RM 49.00</p>
+        </div>
+      </div>
+      <div class= "column boy">
+        <div class="content">
+        <img src="boy5.jpeg" alt="Boy" style="width:100%">
+          <h4>Coat</h4>
+          <p>RM 67.00</p>
+        </div>
+      </div>
+      <div class= "column boy">
+        <div class="content">
+        <img src="boy6.jpeg" alt="Boy" style="width:100%">
+          <h4>Coat</h4>
+          <p>RM 74.00</p>
+        </div>
+      </div>
+      <div class= "column boy">
+        <div class="content">
+        <img src="boy10.jpeg" alt="Boy" style="width:100%">
+          <h4>Coat</h4>
+          <p>RM 70.00</p>
+        </div>
+      </div>
+      <div class= "column boy">
+        <div class="content">
+        <img src="boy8.jpeg" alt="Boy" style="width:100%">
+          <h4>T-shirt</h4>
+          <p>RM 45.00</p>
+        </div>
+      </div>
+      <div class= "column boy">
+        <div class="content">
+        <img src="vest.jpeg" alt="Boy" style="width:100%">
+          <h4>Vest</h4>
+          <p>RM 65.00</p>
+        </div>
+      </div>
+      <div class= "column boy">
+        <div class="content">
+        <img src="boy2.jpeg" alt="Boy" style="width:100%">
+          <h4>Kemeja</h4>
+          <p>RM 48.00</p>
+        </div>
+      </div>
+     
+      
+    <!-- END GRID -->
+    </div>
+    
+    <!-- END MAIN -->
+    </div>
+    
+    <script>
+    filterSelection("all")
+    function filterSelection(c) {
+     var x, i;
+     x = document.getElementsByClassName("column");
+     if (c == "all") c = "";
+     for (i = 0; i < x.length; i++) {
+       w3RemoveClass(x[i], "show");
+       if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+     }
+    }
+    
+    function w3AddClass(element, name) {
+     var i, arr1, arr2;
+     arr1 = element.className.split(" ");
+     arr2 = name.split(" ");
+     for (i = 0; i < arr2.length; i++) {
+       if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+     }
+    }
+    
+    function w3RemoveClass(element, name) {
+     var i, arr1, arr2;
+     arr1 = element.className.split(" ");
+     arr2 = name.split(" ");
+     for (i = 0; i < arr2.length; i++) {
+       while (arr1.indexOf(arr2[i]) > -1) {
+         arr1.splice(arr1.indexOf(arr2[i]), 1);     
+       }
+     }
+     element.className = arr1.join(" ");
+    }
+    
+    
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+     btns[i].addEventListener("click", function(){
+       var current = document.getElementsByClassName("active");
+       current[0].className = current[0].className.replace(" active", "");
+       this.className += " active";
+     });
+    }
+    </script>
+    </body>
+    </body>
+    </html>

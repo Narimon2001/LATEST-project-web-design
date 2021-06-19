@@ -1,0 +1,43 @@
+
+        .menu_ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color :#BEEB9C ;
+    }
+
+    .menu_ul li {
+    float: left;
+   
+    }
+
+    .menu_ul li a {
+    display: block;
+    color:rgb(15, 15, 15);
+    text-align: center;
+    font-size: large;
+    padding: 14px 40px;
+    text-decoration: none;
+    }
+
+    .menu_ul li a:hover {
+    background-color:white;
+    }
+table {
+    text-align: center;
+    
+}
+.text-center {
+    text-align: center;
+  }
+   
+      .button1 {background-color: #6C9458;} /* Submit */
+      .button2 {background-color: #FAF1B7;} /* Cancel */
+
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Template</title>
+        <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+        <script src="jquery-1.10.0.min.js"></script>
+        <script src="jquery.mobile-1.4.5.min.js"></script>
+    
+        <link rel="stylesheet" href="style.css">
+</head>
+<center>
+<body>
+     <h1 style="text-align: center; font-family: 'Courier New', Courier, monospace;">WELCOME TO NAF TEXTILES </h1>
+     
+     <ul class="menu_ul">
+        <ul class="menu_ul li">
+        <ul class="menu_ul a">
+        <ul class="menu_ul a:hover">
+    
+            <li menu="menu_ul"><a href="home.html" target="location">Home</a></li>
+            <li menu="menu_ul"><a href="gallery.html" target="location">List of Product</a></li>
+            <li menu="menu_ul"><a href="form.html" target="location">Order Form</a></li>
+            <li menu="menu_ul"><a href="contact.html" target="location">Contact Us</a></li>
+        </ul>
+        </ul>
+        </ul>
+        </ul>
+            <h4>You can come and see for yourself the wide selection of clothes available in our boutique. Must be one of them to your liking
+            <br>NAF TEXTTILE we have a wide range of modern fashion shirts. NAF TEXTTILE provides shirts for women and men, in addition our store has very cheap prices.</h4>
+        
+<body>
+
+     <div class="w3-content w3-section" style="max-width:500px">
+     <img class="mySlides w3-animate-top" src="collection.jpeg" style="width:80%">
+     <img class="mySlides w3-animate-bottom" src="jumpsuit.jpeg" style="width:80%">
+     <img class="mySlides w3-animate-top" src="skirt.jpeg" style="width:80%">
+     <img class="mySlides w3-animate-top" src="blouse2.webp" style="width:80%">
+     <img class="mySlides w3-animate-bottom" src="pants.jpeg" style="width:80%">
+     <img class="mySlides w3-animate-bottom" src="tshirt1.jpg" style="width:80%">
+     <img class="mySlides w3-animate-bottom" src="kemeja.jpeg" style="width:80%">
+     <img class="mySlides w3-animate-bottom" src="boy2.jpeg" style="width:80%">
+     <img class="mySlides w3-animate-bottom" src="boy5.jpeg" style="width:80%">
+     <img class="mySlides w3-animate-bottom" src="boy4.jpeg" style="width:80%">
+     <img class="mySlides w3-animate-bottom" src="boy9.jpeg" style="width:80%">
+     </div>
+              
+              <script>
+              var myIndex = 0;
+              carousel();
+              
+              function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 2500);    
+              }
+</script>
+              
+</body>
+</html>

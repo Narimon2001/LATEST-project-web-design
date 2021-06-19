@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Sales Info</title>
+		<meta name="viewport" content="width=device-width, initial scale=1.0">
+		<script src="salesform.js"></script>
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+	<h1 style="text-align: center; font-family: 'Courier New', Courier, monospace;">WELCOME TO NAF TEXTILES</h1>
+
+ 
+    <ul class="menu_ul">
+        <ul class="menu_ul li">
+        <ul class="menu_ul a">
+        <ul class="menu_ul a:hover">
+    
+            <li menu="menu_ul"><a href="home.html" target="location">Home</a></li>
+            <li menu="menu_ul"><a href="gallery.html" target="location">List of Product</a></li>
+            <li menu="menu_ul"><a href="form.html" target="location">Order Form</a></li>
+            <li menu="menu_ul"><a href="contact.html" target="location">Contact Us</a></li>
+        </ul>
+        </ul>
+        </ul>
+        </ul>
+		<html>
+<head>
+<style>
+	p {
+		border-top-style: dotted;
+		border-right-style: solid;
+		border-bottom-style: dotted;
+		border-left-style: solid;
+		font-family:'Franklin Gothic Medium';
+		font-size:20px;
+		}
+		</style>
+		</head>
+		<body>
+		  
+		  <p><b>You can come and see for yourself the wide selection of clothes available in our boutique. Must be one of them to your liking.</p>
+          <p>NAF TEXTTILE we have a wide range of modern fashion shirts. NAF TEXTTILE provides shirts for women and men, in addition our store has very cheap prices.</p>
+		<style>
+		input[type=text],input[type=number]{
+			font-family: Arial;
+			font-size: 17px;
+			padding: 5px 0px;
+			width: 60%;
+			border: 2px solid white;
+			margin-left: 20px;
+			padding-left: 10px;
+		}
+
+		input[type=text]:focus,input[type=number]:focus{
+			background-color: #f1c9845d;
+		}
+		
+		input[type=radio]{
+			margin-left: 20px;
+		}
+		
+		input[type=submit]{
+		  background-color: white;
+		  color: black;
+		  font-weight: bold;
+		  width:100px;
+		  border: 2px solid #03A651;
+		  border-radius: 10px;
+		  padding: 10px 20px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		}
+
+		input[type=submit]:hover, input[type=submit]:active {
+		  background-color: #93DF74;
+		  color: white;
+		  box-shadow: 2px 2px 5px rgb(248, 228, 162);
+		}
+		
+		input[type=reset]{
+		  background-color: white;
+		  color: black;
+		  font-weight: bold;
+		  width:100px;
+		  border: 2px solid #C70300;
+		  border-radius: 10px;
+		  padding: 10px 20px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		}
+
+		input[type=reset]:hover, input[type=reset]:active {
+		  background-color: #CD6D50;
+		  color: white;
+		  box-shadow: 2px 2px 5px rgb(248, 228, 162);
+		}
+		
+		div{
+			padding: 20px 20px 20px 20px;
+		}
+		
+		#box1{
+			background: #FCFEB7    ;
+		}
+		
+		.title{
+			background:#44805B   ;
+		}
+		
+		.subtitle{
+			background: #DFD274 ;
+		}
+		
+		.payment{
+			background:#EAA85D;
+		}
+		
+		table{
+			background:#E7DFA6   ;
+		}
+		
+		#borderall{
+			margin: 20px;
+			padding: 20px;
+			border-width: 15px ;/*top right  bottom left*/
+			border-color:#ecc282;/*top right  bottom left*/
+		}
+	
+		
+		</style>
+	</head>
+	<body>
+	<div id="borderall">
+	
+		<table align="center" border="1" width="60%" height="400px" bgcolor="white">
+			<tr>
+				<th colspan="2"  align="center" valign="center" class="title"><h1>Sales Info</h1></th>
+			</tr>
+				<tr>
+					<td width="30%">
+			<form name="myform" action="" method="POST" onsubmit="return onsubmitform();" enctype="multipart/form-data">
+				
+					<b>Customer Name</b>
+					</td>
+					<td>
+						<input type="text" name="custname" id="name" size="50" placeholder="Full Name" />
+						<br>
+						<br>
+					</td>
+				</tr>
+				<br>
+				<td>
+					<b>Phone Number</b>
+					</td>
+					<td>
+						<input type="text" name="custname" id="phone" size="50" placeholder="Phone Number" />
+						<br>
+						<br>
+					</td>
+				</tr>
+				<br>
+				<td>
+					<b>Address</b>
+					</td>
+					<td>
+						<input type="text" name="address" id="address" size="50" placeholder="Address" />
+						<br>
+						<br>
+					</td>
+				</tr>
+				
+				<tr>
+					<th colspan="2"  align="center" valign="center" class="subtitle"><h3>Item 1</h3></th>
+				</tr>
+				<tr>
+					<td>
+					<br>
+					<b>Name</b>
+					</td>
+					<td>
+						<input type="text" name="itemname1" id="itemname1" size="50" placeholder="Item Name" />
+						<br>
+						<br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<br>
+					<b>Unit Price (RM)</b>
+					</td>
+					<td>
+						<input type="text" name="itemprice1" id="price1" size="50" placeholder="Item Price" />
+						<br>
+						<br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<br>
+					<b>Quantity</b>
+					</td>
+					<td>
+						<input type="number" name="itemquantity1" id="quantity1" size="50" min="1" placeholder="Item Quantity" />
+						<br>
+						<br>
+					</td>
+				</tr>
+				
+				<tr>
+					<th colspan="2"  align="center" valign="center" class="subtitle"><h3>Item 2</h3></th>
+				</tr>
+				<tr>
+					<td>
+					<br>
+					<b>Name</b>
+					</td>
+					<td>
+						<input type="text" name="itemname2" id="itemname2" size="50" placeholder="Item Name" />
+						<br>
+						<br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<br>
+					<b>Unit Price (RM)</b>
+					</td>
+					<td>
+						<input type="text" name="itemprice2" id="price2" size="50" placeholder="Item Price" />
+						<br>
+						<br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<br>
+					<b>Quantity</b>
+					</td>
+					<td>
+						<input type="number" name="itemquantity2" id="quantity2" size="50" min="1" placeholder="Item Quantity" />
+						<br>
+						<br>
+					</td>
+				</tr>
+				
+				<tr>
+					<td colspan="2" align="center" valign="center">
+					<br>
+						<input type="submit" name="Submit" value="Calculate">
+						<input type="reset" value="Reset">
+					</td>
+				</tr>
+			</form>			
+		</table>
+		
+		<br><br><br><br><br><br>
+		
+		<table align="center" border="1" width="60%" height="400px" bgcolor="white">
+			<tr>
+				<th colspan="2"  align="center" valign="center" class="title"><h1>Sales Info</h1></th>
+			</tr>
+				<tr>
+					<td width="30%">
+				
+					<br>
+					<b>Customer Name</b>
+					</td>
+					<td>
+						<div id="names2"></div>
+						<br>
+						<br>
+					</td>
+				</tr>
+				<td>
+					<b>Phone Number</b>
+					</td>
+					<td>
+						<div id="noPhone"></div>
+						<br>
+						<br>
+					</td>
+				</tr>
+				<br>
+				<td>
+					<b>Address</b>
+					</td>
+					<td>
+						<div id="address2"></div>
+						<br>
+						<br>
+					</td>
+				</tr>
+				
+				<tr>
+					<th colspan="2"  align="center" valign="center" class="subtitle"><h3>Item 1</h3></th>
+				</tr>
+				<tr>
+					<td>
+					<br>
+					<b>Name</b>
+					</td>
+					<td>
+						<div id="opname1"></div>
+						<br>
+						<br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<br>
+					<b>Unit Price (RM)</b>
+					</td>
+					<td>
+						<div id="opprice1"></div>
+						<br>
+						<br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<br>
+					<b>Quantity</b>
+					</td>
+					<td>
+						<div id="opquantity1"></div>
+						<br>
+						<br>
+					</td>
+				</tr>
+				
+				<tr>
+					<td id="box1">
+					<br>
+					<b>Total Price (RM)</b>
+					</td>
+					<td>
+						<div id="total1"></div>
+						<br>
+						<br>
+					</td>
+				</tr>
+				
+				<tr>
+					<th colspan="2"  align="center" valign="center" class="subtitle"><h3>Item 2</h3></th>
+				</tr>
+				<tr>
+					<td>
+					<br>
+					<b>Name</b>
+					</td>
+					<td>
+						<div id="opname2"></div>
+						<br>
+						<br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<br>
+					<b>Unit Price (RM)</b>
+					</td>
+					<td>
+						<div id="opprice2"></div>
+						<br>
+						<br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<br>
+					<b>Quantity</b>
+					</td>
+					<td>
+						<div id="opquantity2"></div>
+						<br>
+						<br>
+					</td>
+				</tr>
+				
+				<tr>
+					<td id="box1">
+					<br>
+					<b>Total Price (RM)</b>
+					</td>
+					<td>
+						<div id="total2"></div>
+						<br>
+						<br>
+					</td>
+				</tr>
+				
+				<tr>
+					<th colspan="2"  align="center" valign="center" class="payment"><h3>Payment Info</h3></th>
+				</tr>
+				<tr>
+				
+				<tr>
+					<td id="box1">
+					<br>
+					<b>Grand Total (RM)</b>
+					</td>
+					<td>
+						<div id="grandtotal"></div>
+						<br>
+						<br>
+					</td>
+				</tr>
+			
+		</table>
+		</div>
+	</body>
+</html>
